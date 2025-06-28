@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Interest Groups</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Interest Groups</h1>
+    <p id="description">Please fill out the form below with the required information and we will get you added to the right groups!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">What is your name? <input id="name" type="text" required placeholder="first name" /></label>
+        <label for="email" id="email-label">What is your email? <input id="email" type="email" required placeholder="email@email.com" /></label>
+        <label for="number" id="number-label">What is your number? (Optional) <input id="number" pattern="[0-9]{10,}" placeholder="numbers only, no spaces" min="0000000000" max="9999999999" type="number" /></label>
+      </fieldset>
+      <fieldset>
+        <label>Where do you live?
+          <select id="dropdown" name="dropdown">
+            <option value="" id="dropdown">(Select One)</option>
+            <option value="1" id="dropdown">Utah</option>
+            <option value="2" id="dropdown">Colorado</option>
+            <option value="3" id="dropdown">California</option>
+            <option value="4" id="dropdown">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p id="description">What times would work best for you?</p>
+          <label for="weeknights"><input type="radio" name="times" class="" value="1" /> Weeknights</label>
+          <label for="weekends"><input type="radio" name="times" class="" value="2" /> Weekends</label>
+          <label for"anytime"><input type="radio" name="times" class="" value="3" /> Anytime</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p id="description">What are your specific interests?</p>
+        <label for="mountain-biking" class="interests"><input id="mountain-biking" type="checkbox" value="1" /> Mountian Biking</label>
+        <label for="road-biking" class="interests"><input id="road-biking" type="checkbox" value="2" /> Road Biking</label>
+        <label for="motorcycles" class="interests"><input id="motorcycles" type="checkbox" value="3" /> Motorcycles</label>
+        <label for="pc-games" class="interests"><input id="pc-games" type="checkbox" value="4" /> PC Games</label>
+        <label for="console-games" class="interests"><input id="console-games" type="checkbox" value="5" /> Console Games</label>
+        <label for="book-club" class="interests"><input id="book-club" type="checkbox" value="6"/> Book Club</label>
+        <label for="hiking" class="interests"><input id="hiking" type="checkbox" value="7" /> Hiking</label>
+      </fieldset>
+      <fieldset>
+        <p id="description">Is there anything else that you would like to tell us about yourself?</p>
+        <textarea id="extra" name="extra" rows="5" cols="58" placeholder="Are you single or married? any children or pets? What other things do you enjoy?!">
+        </textarea>
+      </fieldset>
+      <input type="submit" id="submit" name="Submit" />
+  </body>
+</html>
